@@ -1,4 +1,4 @@
-import { Button, Divider } from "@nextui-org/react";
+import { Divider } from "@nextui-org/react";
 import InputForm from "./components/InputForm";
 export default function Home() {
   return (
@@ -9,18 +9,6 @@ export default function Home() {
       <Divider className="my-4 w-1/12" />
 
       <InputForm />
-
-      {/* <div>
-        <Button
-          size="lg"
-          radius="full"
-          color="primary"
-          variant="shadow"
-          className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg"
-        >
-          Click me
-        </Button>
-      </div> */}
     </section>
   );
 }
