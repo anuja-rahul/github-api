@@ -10,7 +10,7 @@ import SwitchMode from "./SwitchMode";
 
 export default function Header() {
   return (
-    <Navbar isBordered className="px-6 w-screen" shouldHideOnScroll>
+    <Navbar isBordered className="px-4 max-w-[100%]" shouldHideOnScroll>
       <NavbarBrand>
         <p className="font-bold text-inherit text-md sm:text-xl">
           GitHub Finder
