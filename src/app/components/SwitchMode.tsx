@@ -17,12 +17,17 @@ const SwitchMode = () => {
   return (
     <div>
       <Switch
+        size="sm"
+        color="primary"
         isSelected={theme == "purple-dark"}
         onValueChange={() =>
           setTheme(theme == "purple-dark" ? "light" : "purple-dark")
         }
-        startContent={<SunIcon />}
-        endContent={<MoonIcon />}
+        thumbIcon={({ isSelected, className }) =>
+          isSelected ? <MoonIcon /> : <SunIcon />
+        }
+        // startContent={<SunIcon />}
+        // endContent={<MoonIcon />}
       />
       {/* {theme == "purple-dark" ? "dark" : "light"} */}
       {/* </Switch> */}

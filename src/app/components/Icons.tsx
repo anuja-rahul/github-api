@@ -1,9 +1,17 @@
-import { PiSunDim, PiMoonFill } from "react-icons/pi";
+import { PiSunFill, PiMoonFill } from "react-icons/pi";
 
 export const SunIcon = () => {
-  return <PiSunDim />;
+  return (
+    <div className="text-slate-950">
+      <PiSunFill />
+    </div>
+  );
 };
 
 export const MoonIcon = () => {
-  return <PiMoonFill />;
+  return (
+    <div className="text-slate-950">
+      <PiMoonFill />
+    </div>
+  );
 };

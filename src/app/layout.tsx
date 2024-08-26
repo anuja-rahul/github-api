@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Provider from "./Provider";
-import SwitchMode from "./components/SwitchMode";
+// import SwitchMode from "./components/SwitchMode";
+import Header from "./components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Provider>
-          <SwitchMode />
+          <Header />
+          {/* <SwitchMode /> */}
           {children}
         </Provider>
       </body>
